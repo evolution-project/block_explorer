@@ -69,27 +69,31 @@ ng build --configuration production
 ## Update system and install packages
 
 ```
-sudo apt update && sudo apt install postgresql postgresql-contrib \
-sudo system start postgresql-13
+sudo apt update && sudo apt install postgresql postgresql-contrib
+sudo system start postgresql
 ```
 
 ## Add a New Role
 
-1. Connect as postgres user and enter psql prompt
+1. Connect as postgres user and enter psql prompt - NO NEED
 
 ```
-sudo postgres psql
+sudo -u postgres psql
 ```
 
-2. Create a new role
+2. Create a new role with pass in teminal
 
 ```
-createuser --interactive
+sudo -u postgres createuser --interactive --pwprompt
 ```
 
 `Output`
 
 `Enter name of role to add: evox`
+
+`Enter Password`
+
+`Confirm Pass`
 
 `Shall the new role be a superuser? (y/n) y`
 
@@ -100,7 +104,7 @@ createuser --interactive
 ```
 sudo nano /etc/postgresql/13/main/postgresql.config
 
-change `list_address = 'localhost' to `listen_address = '*'
+change and uncomit line `list_address = 'localhost' to `listen_address = '*'
 ```
 
 2. Edit pg_hba.conf and add a new line
@@ -111,7 +115,7 @@ change `list_address = 'localhost' to `listen_address = '*'
 host    all         all     0.0.0.0/0     md5
 ```
 
-3. Open firewall port
+3. Open firewall port - no need for this step if ufw is inactive
 
 ```
 sudo ufw allow 5432/tcp
@@ -120,7 +124,7 @@ sudo ufw allow 5432/tcp
 4. Restart Postgresql Service
 
 ```
-sudo system restart postgresql-13
+sudo systemctl restart postgresql
 ```
 
 # Install pgAdmin4 postgresql tool on client machine
@@ -179,7 +183,7 @@ server {
     gzip on;
     gzip_types *;
     gzip_min_length 500;
-    
+
     # Set files location
     root /var/www/block-explorer/dist/;
     index index.html;
