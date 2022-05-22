@@ -193,22 +193,22 @@ END;
 $$;
 
 
-GRANT EXECUTE ON PROCEDURE purge() TO zano;
+GRANT EXECUTE ON PROCEDURE purge() TO evox;
 
-GRANT EXECUTE ON PROCEDURE purgeaboveheight(p_height integer) TO zano;
+GRANT EXECUTE ON PROCEDURE purgeaboveheight(p_height integer) TO evox;
 
-GRANT EXECUTE ON PROCEDURE update_statistics(p_startheight integer) TO zano;
+GRANT EXECUTE ON PROCEDURE update_statistics(p_startheight integer) TO evox;
 
-GRANT ALL ON TABLE aliases TO zano;
+GRANT ALL ON TABLE aliases TO evox;
 
-GRANT ALL ON TABLE alt_blocks TO zano;
+GRANT ALL ON TABLE alt_blocks TO evox;
 
-GRANT ALL ON TABLE blocks TO zano;
+GRANT ALL ON TABLE blocks TO evox;
 
-GRANT ALL ON TABLE charts TO zano;
+GRANT ALL ON TABLE charts TO evox;
 
-GRANT ALL ON TABLE out_info TO zano;
+GRANT ALL ON TABLE out_info TO evox;
 
-GRANT ALL ON TABLE pool TO zano;
+GRANT ALL ON TABLE pool TO evox;
 
-GRANT ALL ON TABLE transactions TO zano;
+GRANT ALL ON TABLE transactions TO evox;

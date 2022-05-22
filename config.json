@@ -9,7 +9,7 @@
         "enabled_during_sync": false
     },
     "database": {
-        "user": "zano",
+        "user": "evox",
         "host": "10.0.0.13",
         "port": 5432,
         "database": "db",

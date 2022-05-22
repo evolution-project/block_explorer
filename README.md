@@ -36,7 +36,7 @@ Edit `config.json`
         "api": "http://10.0.0.13:12233"
     },
     "database": {
-        "user": "zano",
+        "user": "evox",
         "host": "10.0.0.13",
         "port": 5432,
         "database": "db",
@@ -44,7 +44,7 @@ Edit `config.json`
     }
 ```
 
-1. `"api"` The address of your zano node.
+1. `"api"` The address of your evox node.
 2. `"frontEnd_api"` The address of the angular uses for CORS. seems to not like 127.0.0.1
 3. `"server_port"` Port of backend API used by angular to obtain data.
 4. `"auditable_wallet"` FDQN of your auditable wallet running as a service.
@@ -89,7 +89,7 @@ createuser --interactive
 
 `Output`
 
-`Enter name of role to add: zano`
+`Enter name of role to add: evox`
 
 `Shall the new role be a superuser? (y/n) y`
 
@@ -143,7 +143,7 @@ sudo apt install pgadmin4
 1. create a connection to your server, provide a master password
 2. connect to your server with the role created previously
 
-`username: zano`
+`username: evox`
 
 `password: 123456`
 
