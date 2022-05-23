@@ -1,5 +1,5 @@
 {
-    "api": "http://192.168.100.121:11211",
+    "api": "http://192.168.100.121:52521",
     "frontEnd_api": "*",
     "server_port": "8008",
     "auditable_wallet": {
@@ -12,7 +12,7 @@
         "user": "evox",
         "host": "192.168.100.121",
         "port": 5432,
-        "database": "db",
-        "password": "123456"
+        "database": "postgres",
+        "password": "muiemuie"
     }
 }
