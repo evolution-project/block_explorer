@@ -58,11 +58,24 @@ node server.js
 
 ## Build Frontend For Production
 
+#### Install ng
+
+```
+sudo apt install ng-common
+```
+
 Following command will produce a `dist` folder that you can copy to your a web server
 
 ```
 ng build --configuration production
 ```
+# Clone it
+
+``
+git clone https://github.com/evolution-project/block_explorer.git
+cd block_explorer
+npm i
+``
 
 # Postgresql
 
