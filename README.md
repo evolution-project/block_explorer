@@ -175,10 +175,16 @@ sudo apt install pgadmin4-desktop
 ## Instal nginx and certbot
 
 ```
-sudo apt update && sudo apt install nginx certbot
+sudo apt install nginx certbot python3-certbot-nginx
 ```
 
-2. Start Nginx
+2. Start Nginx if is not started
+
+Check nginx status
+
+```
+sudo systemctl status nginx
+```
 
 ```
 sudo system nginx start
