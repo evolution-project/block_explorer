@@ -20,7 +20,7 @@ export const environment = {
 #### Run Frontend development Server
 
 ```
-ng serve -o
+npx ng serve -o
 ```
 
 ## Backend Server
@@ -67,23 +67,23 @@ sudo apt install ng-common
 Following command will produce a `dist` folder that you can copy to your a web server
 
 ```
-ng build --configuration production
+npm run 'build prod'
 ```
 # Clone it
 
-``
+```
 git clone https://github.com/evolution-project/block_explorer.git
 cd block_explorer
 npm i
-``
+```
 
 # Postgresql
 
 ## Update system and install packages
 
 ```
-sudo apt update && sudo apt install postgresql postgresql-contrib
-sudo system start postgresql
+sudo apt update && sudo apt install postgresql curl postgresql-contrib
+sudo systemctl start postgresql
 ```
 
 ## Add a New Role
@@ -115,7 +115,7 @@ sudo -u postgres createuser --interactive --pwprompt
 1. Edit postgresql.conf
 
 ```
-sudo nano /etc/postgresql/13/main/postgresql.config
+sudo nano /etc/postgresql/13/main/postgresql.conf
 
 change and uncomit line `list_address = 'localhost' to `listen_address = '*'
 ```
@@ -145,14 +145,15 @@ sudo systemctl restart postgresql
 ## Update Ubuntu repositories
 
 ```
-$ curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
-$ sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
+sudo apt-get install curl gnupg2 -y
+sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+sudo sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list && apt update'
 ```
 
 ## Install pgAdmin4
 
 ```
-sudo apt install pgadmin4
+sudo apt install pgadmin4-desktop
 ```
 
 ## Start pgAdmin4
