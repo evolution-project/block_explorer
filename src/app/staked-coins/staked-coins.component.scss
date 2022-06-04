@@ -21,7 +21,7 @@
         border-radius: 50px 0 0 50px;
         @include max991 {
             border-radius: 10px 0 0 0;
-            background: transparent;
+//            background: transparent;  //fix for mobile ver
             padding: 12px 20px;
             align-items: flex-start;
         }
@@ -35,7 +35,7 @@
         background-color: #500db3;
         @include max991 {
             border-radius: 0 10px 0 0;
-            background: transparent;
+//            background: transparent;  //fix for mobile ver
         }
     }
     .amount {

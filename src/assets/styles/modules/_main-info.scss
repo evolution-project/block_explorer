@@ -17,7 +17,7 @@
             padding: 12px 24px;
             //border-top: 1px solid rgba(#fff, .4);
             &:nth-child(2n + 1) {
-                background-color: #263163;
+                background-color: #2c0762;  // fix for mobile ver
             }
             @include max575 {
                 padding: 12px 20px;
