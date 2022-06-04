@@ -112,7 +112,7 @@
 
 .transaction_pool {
     @include bartblock;
-    border-radius: 10px;
+    border-radius: 50px;
     @include max991 {
         overflow-x: auto;
     }
