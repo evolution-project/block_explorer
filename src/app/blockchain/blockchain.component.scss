@@ -23,8 +23,8 @@
 
 .latest_blocks {
     @include bartblock;
-    border-radius: 10px;
-    margin-bottom: 25px;
+    border-radius: 50px;
+    margin-bottom: 50px;
     position: relative;
     min-height: 300px;
     @include max761 {
