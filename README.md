@@ -53,7 +53,7 @@ Edit `config.json`
 #### Run Backend Server
 
 ```
-node server.js
+node server-pg.js
 ```
 
 ## Build Frontend For Production
