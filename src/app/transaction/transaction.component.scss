@@ -182,7 +182,7 @@
             ._mixin_count {
                 width: 15%;
                 .has_indexes {
-                    color: #68a1ff;
+                    color: #a55eff;
                     cursor: pointer;
                 }
                 @include max991 {
@@ -195,7 +195,7 @@
             ._global_index {
                 width: 20%;
                 .has-indexes {
-                    color: #68a1ff;
+                    color: #a55eff;
                     cursor: pointer;
                 }
                 @include max991 {
@@ -275,9 +275,9 @@
         padding: 0 15px;
     }
     > div {
-        color: #68a1ff;
+        color: #a55eff;
         .emulation_link {
-            color: #68a1ff;
+            color: #a55eff;
             cursor: pointer;
             @include textWrap;
         }
