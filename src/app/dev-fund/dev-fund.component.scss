@@ -11,13 +11,13 @@
         border-radius: 0 0 10px 10px;
     }
     .title {
-        background: linear-gradient(to right, #1b3a8a, #32439f);
+        background: linear-gradient(to right,#000,#500db3,#000);
         align-items: center;
         display: flex;
         flex-direction: column;
         flex: 1 1 35%;
         justify-content: center;
-        border-radius: 10px 0 0 10px;
+        border-radius: 50px 0 0 50px;
         @include max991 {
             border-radius: 0 0 0 10px;
             background: transparent;
@@ -30,8 +30,8 @@
         flex-direction: column;
         flex: 1 1 65%;
         justify-content: center;
-        border-radius: 0 10px 10px 0;
-        background-color: #2b3768;
+        border-radius: 0 50px 50px 0;
+        background-color: #500db3;
         @include max991 {
             border-radius: 0 0 10px 0;
             background: transparent;
