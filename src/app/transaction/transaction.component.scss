@@ -7,10 +7,10 @@
         tr {
             height: 38px;
             &:nth-child(2n + 1) {
-                background-color: rgba(#263163, 1);
+                background-color: rgba(#190333, 1);
             }
             &:nth-child(2n) {
-                background-color: rgba(#234ee2, 0.1);
+                background-color: rgba(#2c0762, 0.1);
             }
             &.confirmed {
                 background-color: rgba(#0e5311, 1);
@@ -89,10 +89,10 @@
     overflow: hidden;
     tbody tr {
         &:nth-child(2n + 1) {
-            background-color: rgba(#234ee2, 0.1);
+            background-color: rgba(#2c0762, 0.1);
         }
         &:nth-child(2n) {
-            background-color: rgba(#263163, 1) !important;
+            background-color: rgba(#190333, 1) !important;
         }
     }
 }
@@ -132,7 +132,7 @@
                     border-bottom: none;
                 }
                 &:nth-child(2n) {
-                    background-color: rgba(#234ee2, 0.1);
+                    background-color: rgba(#2c0762, 0.1);
                 }
             }
         }

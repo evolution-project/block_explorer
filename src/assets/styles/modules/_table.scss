@@ -19,7 +19,7 @@
     font-size: 20px;
     font-weight: 300;
     color: #9eaacc;
-    background-color: rgba(#234ee2, 0.1);
+    background-color: rgba(#2c0762, 0.1);
 }
 
 table {
@@ -63,8 +63,8 @@ table {
             &:nth-child(2n) {
                 background-color: #190333;
             }
-            //&.pow {background-color: rgba(#47effb, .3);}
-            //&.pos {background-color: rgba(#0c69fe, .3);}
+            //&.pow {background-color: rgba(#8000ff, .3);}
+            //&.pos {background-color: rgba(#b30ca7, .3);}
             &.new-block {
                 background-color: rgba(#e06a6a, 0.5);
             }
