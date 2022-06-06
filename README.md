@@ -39,7 +39,7 @@ Edit `config.json`
         "user": "evox",
         "host": "10.0.0.13",
         "port": 5432,
-        "database": "db",
+        "database": "postgres",
         "password": "123456"
     }
 ```
@@ -74,7 +74,7 @@ npm run 'build prod'
 ```
 git clone https://github.com/evolution-project/block_explorer.git
 cd block_explorer
-npm i
+npm install
 ```
 
 # Postgresql
@@ -187,18 +187,18 @@ sudo systemctl status nginx
 ```
 
 ```
-sudo system nginx start
+sudo systemctl nginx start
 ```
 
 ## Create site configuration
 
 ```
-sudo nano /etc/nginx/sites-available/zano.smartcoinpool.net
+sudo nano /etc/nginx/sites-available/chain.evolution-network.org
 ```
 
 ```
 server {
-    server_name zano.smartcoinpool.net;
+    server_name chain.evolution-network.org;
 
     gzip on;
     gzip_types *;
@@ -231,7 +231,7 @@ server {
 }
 
 server {
-    if ($host = zano.smartcoinpool.net) {
+    if ($host = chain.evolution-network.org) {
         return 301 https://$host$request_uri;
     } # managed by Certbot
 
@@ -245,4 +245,4 @@ server {
 ```
 # Screenshot
 
-<img src="https://raw.githubusercontent.com/evolution-project/block_explorer/master/screenshot.png" width="50%" height="50%">
+<img src="https://raw.githubusercontent.com/evolution-project/block_explorer/master/screenshot.png" width="70%" height="70%">
