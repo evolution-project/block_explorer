@@ -1,6 +1,6 @@
 @import '../../assets/styles/base/mixins';
 .wrapper_table {
-    border-radius: 10px;
+    border-radius: 50px;
     overflow: hidden;
     @include max1170 {
         overflow-x: auto;

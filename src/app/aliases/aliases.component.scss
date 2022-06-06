@@ -3,7 +3,7 @@
 }
 
 .wrapper_table {
-    border-radius: 10px;
+    border-radius: 50px;
     overflow: hidden;
     @include max761 {
         overflow-x: auto;
@@ -91,7 +91,7 @@
                 justify-content: center;
                 font-size: 13px;
                 text-transform: uppercase;
-                border-radius: 10px;
+                border-radius: 50px;
                 padding: 5px 15px;
                 color: #ff5252;
             }
@@ -136,7 +136,7 @@
                 margin-left: 27px;
                 border: 1px solid transparent;
                 background: linear-gradient(#000,#3b178a,#000);
-                border-radius: 10px;
+                border-radius: 50px;
                 color: #fff;
                 font-size: 16px;
                 transition: 0.2s;
