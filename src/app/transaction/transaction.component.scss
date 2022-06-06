@@ -246,7 +246,7 @@
             font-size: 14px;
         }
         > button {
-            background: linear-gradient(to bottom, #212f6c, #212f6c);
+            background: linear-gradient(#000,#3b178a,#000);
             border-radius: 10px;
             white-space: nowrap;
             text-transform: uppercase;
@@ -257,7 +257,7 @@
             margin-top: 15px;
             transition: 0.2s;
             &:hover {
-                background: linear-gradient(to bottom, #212f6c, #26367a);
+                background: linear-gradient(#000,#3b178a,#000);
             }
         }
     }
