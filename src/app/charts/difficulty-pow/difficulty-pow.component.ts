@@ -39,7 +39,7 @@ export class DifficultyPowComponent
         return new Chart({
             chart: {
                 type: 'line',
-                backgroundColor: '#2b3768',
+                backgroundColor: '#26064d',
                 height: 700,
                 width: null,
                 zoomType: 'x'
@@ -203,7 +203,7 @@ export class DifficultyPowComponent
                 },
                 inputStyle: {
                     color: '#9eaacc',
-                    backgroundColor: '#2b3768'
+                    backgroundColor: '#26064d'
                 },
                 inputBoxBorderColor: '#9eaacc',
                 inputBoxWidth: 120,

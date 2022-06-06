@@ -47,7 +47,7 @@ export class ChartsComponent
         return new Chart({
             chart: {
                 type: 'line',
-                backgroundColor: '#2b3768',
+                backgroundColor: '#26064d',
                 height: 280,
                 // width: 375,
                 zoomType: 'x'

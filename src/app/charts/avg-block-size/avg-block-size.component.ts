@@ -37,7 +37,7 @@ export class AvgBlockSizeComponent
         return new Chart({
             chart: {
                 type: 'line',
-                backgroundColor: '#2b3768',
+                backgroundColor: '#26064d',
                 height: 700,
                 width: null,
                 zoomType: 'x'
@@ -170,7 +170,7 @@ export class AvgBlockSizeComponent
                 },
                 inputStyle: {
                     color: '#9eaacc',
-                    backgroundColor: '#2b3768'
+                    backgroundColor: '#26064d'
                 },
                 inputBoxBorderColor: '#9eaacc',
                 inputBoxWidth: 120,
