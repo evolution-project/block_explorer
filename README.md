@@ -8,7 +8,7 @@ Edit source/environments.ts and source/environments.prod.ts
 export const environment = {
   production: false,
   backend: 'http://10.0.0.13:8008',
-  documentionApi: 'https://docs.zano.org',
+  documentionApi: 'https://docs.evolution-project.org',
   decimalPlaces: 2
 };
 ```
@@ -223,8 +223,8 @@ server {
     }
 
     listen 443 ssl; # managed by Certbot
-    ssl_certificate /etc/letsencrypt/live/zano.smartcoinpool.net/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/zano.smartcoinpool.net/privkey.pem; # managed by Certbot
+    ssl_certificate /etc/letsencrypt/live/chain.evolution-network.org/fullchain.pem; # managed by Certbot
+    ssl_certificate_key /etc/letsencrypt/live/chain.evolution-network.org/privkey.pem; # managed by Certbot
     include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
     ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
 
@@ -237,7 +237,7 @@ server {
 
 
     listen 80;
-    server_name zano.smartcoinpool.net;
+    server_name chain.evolution-network.org;
     return 404; # managed by Certbot
 
 
